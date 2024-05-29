@@ -142,13 +142,13 @@
                             <div class="pre-title wow fadeInLeft" data-wow-delay=".1s">Welcome to Heaven Vision Church
                                 International
                             </div>
-                            <h2 class="wow fadeInRight" data-wow-delay=".2s">Bringing the Whole Counsel of God to All
-                                Men</h2>
-                            <p class="text-sm wow fadeInUp" data-wow-delay=".3s">Our mission is to bring 1000 lost souls
-                                back to their God and to train 50 cells and 70 leaders by April 2027. We are committed
-                                to loving God, loving others, and serving the world by supporting the needy masses and
-                                spreading the Gospel. Join us in this divine mission and partner with us through prayer,
-                                evangelism, training, and support.</p>
+                            <h2 class="wow fadeInRight" data-wow-delay=".2s">Our Mission is To know Jesus and make Him
+                                known through:
+                            </h2>
+                            <p class="text-sm wow fadeInUp" data-wow-delay=".3s">Worship: Engaging in heartfelt and
+                                Spirit-led worship.Discipleship: Equipping believers to grow in their faith.Outreach:
+                                Reaching the lost and serving the needy.Leadership: Training and empowering leaders for
+                                effective Ministry.</p>
                             <a class="shadow btn btn-icon btn-icon-right wow fadeInUp" href="{{ url('events') }}"
                                 data-wow-delay=".3s"
                                 style="background-color: #4CBB17; color: #fff; transition: background-color 0.3s ease;">
@@ -158,7 +158,7 @@
                                         <path d="M13 10V6H0V4H13V0L18 5L13 10Z" fill=""></path>
                                     </svg>
                                 </span>
-                                <span>More events us</span>
+                                <span>More events</span>
                             </a>
                         </div>
                     </div>
@@ -176,7 +176,7 @@
                 </div>
             </section>
 
-            <!-- Mission Section -->
+            {{-- <!-- Mission Section -->
             <section id="mission" class="section">
                 <div class="container">
                     <h2 class="section-title">Our Mission</h2>
@@ -188,7 +188,7 @@
                         <li>Leadership: Training and empowering leaders for effective Ministry.</li>
                     </ul>
                 </div>
-            </section>
+            </section> --}}
 
             <!-- Core Values Section -->
             <section id="core-values" class="section">

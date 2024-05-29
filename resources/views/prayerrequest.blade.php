@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prayer Request Form</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -76,32 +77,54 @@
 
 <body>
 
+
     <div class="container">
+        <div style="text-align: center;">
+            <a href="/"
+                style="background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; border: none; font-size: 16px; cursor: pointer;">Go
+                Home</a>
+        </div>
         <h2>Share Your Prayer Request</h2>
         <p>At our church, we believe in the power of prayer. We invite you to share your prayer requests with us, so we
             can lift them up together as a community.</p>
         <p>Fill out the form below to submit your prayer request:</p>
-        <form action="submit_prayer_request.php" method="post">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Your Email (optional):</label>
-            <input type="email" id="email" name="email">
-
-            <label for="phone">Your Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
-
-            <label for="location">Your Location:</label>
-            <input type="text" id="location" name="location" required>
-
-            <label for="whom">Whom We Are Praying To:</label>
-            <input type="text" id="whom" name="whom" required>
-
-            <label for="prayer">Your Prayer Request:</label>
-            <textarea id="prayer" name="prayer" required></textarea>
-
-            <input type="submit" value="Submit Prayer Request">
+        @if (session('success'))
+            <div class="alert alert-success" style="background-color: #4CAF50; color: white;">
+                {{ session('success') }}
+            </div>
+        @endif
+        <form action="{{ route('prayer.request.store') }}" method="post">
+            @csrf
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email (optional):</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Your Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="location">Your Location:</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div class="form-group">
+                <label for="whom">Whom We Are Praying To:</label>
+                <input type="text" id="whom" name="whom" required>
+            </div>
+            <div class="form-group">
+                <label for="prayer">Your Prayer Request:</label>
+                <textarea id="prayer" name="prayer" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit Prayer Request">
+            </div>
         </form>
+
+
         <p>We believe that no prayer is too small or too big. Your request will be kept confidential and will be prayed
             over by our church community.</p>
     </div>

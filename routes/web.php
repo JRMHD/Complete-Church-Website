@@ -2,7 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PrayerRequestController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -47,3 +48,9 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__ . '/auth.php';
+
+Route::post('/contacts', [ContactController::class, 'store'])->name('contacts.store');
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
+Route::post('/submit_prayer_request', [PrayerRequestController::class, 'store'])->name('prayer.request.store');
+
+

@@ -28,7 +28,8 @@
                     <div class="footer-title">Contact Us</div>
                     <ul class="contact-list">
                         <li>Umoja 1, Nairobi, Kenya. Questions? Please write us at: <a class="link-secondary"
-                                href="mailto:heavenvim@yahoo.com">heavenvim@yahoo.com</a></li>
+                                href="mailto:info@heavenvisionchurchinternational.com">info@heavenvisionchurchinternational.com</a>
+                        </li>
                         <li><span>Call us:</span><a class="phone" href="tel:+254738900924">+254 738 900 924</a></li>
                     </ul>
                     <ul class="social-list">
